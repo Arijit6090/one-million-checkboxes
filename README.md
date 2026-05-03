@@ -6,9 +6,7 @@ A real-time web application inspired by the "1 Million Checkboxes" concept. User
 The project demonstrates practical system design around real-time communication, Redis-backed coordination, custom rate limiting, and session-based auth.
 
 ## Live Links
-- GitHub Repository: `https://github.com/Rithb898/one-million-checkboxes`
-- Live App: `https://one-million-checkboxes.rithbanerjee.site/`
-- Demo Video (YouTube Unlisted): `<add-your-youtube-unlisted-link>`
+- GitHub Repository: `https://github.com/Arijit6090/one-million-checkboxes`
 
 ## Tech Stack
 - Frontend: HTML, CSS (Tailwind CDN), Vanilla JavaScript
@@ -32,7 +30,7 @@ The project demonstrates practical system design around real-time communication,
 ## How to Run Locally
 1. Clone repository
 ```bash
-git clone https://github.com/Rithb898/one-million-checkboxes.git
+git clone https://github.com/Arijit6090/one-million-checkboxes.git
 cd one-million-checkboxes
 ```
 2. Install dependencies
@@ -122,14 +120,6 @@ src/
   index.ts        # app bootstrap + sockets + redis pubsub wiring
 ```
 
-## Demo Checklist
-Include this in your video:
-- Login flow through OIDC
-- Grid load and scroll
-- Checkbox toggle action
-- Real-time sync between two windows/users
-- Rate-limit behavior (optional but recommended)
-
 ## Notes / Known Constraints
 - Current checkbox state storage uses JSON array in Redis for simplicity; this is easy to reason about but not the most memory-efficient representation for very large scale.
 - In-memory fallback for sessions exists for resilience if Redis session writes fail; production should keep Redis healthy to avoid MemoryStore usage.
@@ -143,10 +133,3 @@ Include this in your video:
 - `GET /auth/status`
 - `POST /auth/logout`
 - `GET /api/protected` (requires auth)
-
-## Submission Notes
-Before submission, ensure:
-- Public GitHub link added
-- Deployed link added
-- YouTube unlisted demo link added
-- README sections complete and accurate
